@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.FragmentMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/green"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    app:tint="@color/black"
+                    android:src="@drawable/eye"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/story_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text=" 냉장고 엿보기" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/follow_no_noti"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="친구를 팔로우해보세요!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/story_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/green"></LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="55"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_weight="70"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"></LinearLayout>
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            app:tint="@color/black"
+                            android:src="@drawable/recommend"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+                        <TextView
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text=" 오늘의 추천 레시피"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="right"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/food_list_btn"
+                            android:src="@drawable/right"
+                            app:tint="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp">
+
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:id="@+id/food_detail_btn"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                    <LinearLayout
+                        android:layout_weight="46"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+                        <LinearLayout
+                            android:layout_weight="15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                        <ImageView
+                            android:layout_weight="70"
+                            android:id="@+id/food_thumb_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kimchi"></ImageView>
+                        <LinearLayout
+                            android:layout_weight="15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="45"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="요리"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:background="@color/green"
+                            android:layout_width="30dp"
+                            android:layout_height="1dp"/>
+                        <TextView
+                            android:id="@+id/main_recipe_food_tv"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:text="김치볶음밥"
+                            android:textSize="18dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="재료"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:background="@color/green"
+                            android:layout_width="30dp"
+                            android:layout_height="1dp"/>
+                        <TextView
+                            android:id="@+id/main_recipe_ingredient_tv"
+                            android:textAlignment="center"
+                            android:maxLines="4"
+                            android:ellipsize="end"
+                            android:textColor="@color/black"
+                            android:text="김치,양파, 쌀, 식용유, 햄, 참기름, 김가루"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="45"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/green"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity=""
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="13dp"
+                            android:layout_height="match_parent"></LinearLayout>
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            app:tint="@color/black"
+                            android:src="@drawable/home2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text=" 지금 우리집은"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/green"/>
+                <LinearLayout
+                    android:id="@+id/goodhomelv"
+                    android:background="@drawable/goodhome"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:layout_weight="90"
+                        android:weightSum="100"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:weightSum="100"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_weight="27"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_weight="60"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                                <ImageView
+                                    android:src="@drawable/temp2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="15"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                                <TextView
+                                    android:id="@+id/temp_tv"
+                                    android:text="24"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:text="℃"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:weightSum="100"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_weight="27"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_weight="60"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                                <ImageView
+                                    android:src="@drawable/humidity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="15"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                                <TextView
+                                    android:id="@+id/humi_tv"
+                                    android:text="60"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:text="%"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+
+                            android:weightSum="100"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_weight="27"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_weight="60"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                                <ImageView
+                                    android:id="@+id/mode_change_iv"
+                                    android:src="@drawable/homein"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="15"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                                <TextView
+                                    android:text="외출모드"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+                                <TextView
+                                    android:id="@+id/outing_state_tv"
+                                    android:textColor="@color/black"
+                                    android:text="OFF"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="15dp">-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/house_title_tv"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:text="지금 우리집은" />-->
+<!--            </LinearLayout>-->
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="15dp">-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:text="현재 우리집 온도는?"></TextView>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="10dp"-->
+<!--                            android:layout_height="wrap_content"></LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/home_temp_tv"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="24"-->
+<!--                            android:textColor="@color/black">-->
+
+<!--                        </TextView>-->
+<!--                        <TextView-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="도"></TextView>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="10dp"-->
+<!--                            android:layout_height="wrap_content"></LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="20dp"></LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:text="현재 우리집 습도는?">-->
+
+<!--                        </TextView>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="10dp"-->
+<!--                            android:layout_height="wrap_content"></LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:text="높음">-->
+
+<!--                        </TextView>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="10dp"-->
+<!--                            android:layout_height="wrap_content"></LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="match_parent"></LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/motion_onoff_btn"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/green">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="외출모드"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textAlignment="center"></TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/motion_state"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:text="ON"></TextView>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="purpose">
+        <item>일반</item>
+        <item>갱년기</item>
+        <item>노화방지</item>
+        <item>두피,모발</item>
+        <item>디톡스 다이어트</item>
+        <item>머슬업 다이어트</item>
+        <item>변비</item>
+        <item>빈혈예방</item>
+        <item>생리불순</item>
+        <item>스트레스 해소</item>
+        <item>암 예방</item>
+        <item>위 건강</item>
+        <item>장 건강</item>
+        <item>저칼로리 다이어트</item>
+        <item>치매 예방</item>
+        <item>피로회복</item>
+        <item>혈당조절</item>
+        <item>혈액순환</item>
+        <item>호흡기 건강</item>
+    </string-array>
+</resources>

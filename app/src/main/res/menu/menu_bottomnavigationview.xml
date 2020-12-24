@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/RefriItem"
+        android:icon="@drawable/refri"
+        android:title="냉장고"/>
+    <item
+        android:id="@+id/homeItem"
+        android:icon="@drawable/home"
+        android:title="홈" />
+    <item
+        android:id="@+id/mypageItem"
+        android:icon="@drawable/user"
+        android:title="내 정보" />
+</menu>

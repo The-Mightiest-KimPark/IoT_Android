@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".follow.FragmentFollow">
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="70"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="친구 팔로우 하기"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        친구 이메일 검색-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_weight="30"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="25"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/follow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="팔로우"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_weight="40"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_weight="15"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="이메일"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_weight="60"
+                    android:id="@+id/follow_user_email_et"
+                    android:hint="이메일을 입력하세요"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_weight="15"
+                    android:id="@+id/follow_add_btn"
+                    android:text="추가"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        친구리스트-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_weight="70"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="12"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="25"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/family"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"></ImageView>
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="팔로우 목록"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="73"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/follow_list_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

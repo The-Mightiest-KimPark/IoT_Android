@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/grocery_seleted_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_weight="95"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        <TextView
+            android:id="@+id/search_item_tv"
+            android:text="바나나"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+      </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green"/>
+</LinearLayout>
+
